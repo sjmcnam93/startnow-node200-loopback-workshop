@@ -30,7 +30,7 @@ describe('loopback server', function() {
       });
   });
 
-  it('responds to /teams', (done) => {
+  it('responds to /api/teams', (done) => {
     chai.request(server)
       .get('/api/teams')
       .end((err, res) => {
